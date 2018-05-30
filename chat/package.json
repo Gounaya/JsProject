@@ -1,0 +1,29 @@
+{
+  "name": "chat",
+  "version": "1.0.0",
+  "description": "startup project",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node ./index.js",
+    "build-exe": "electron-packager .  --platform=linux,win32 --arch=x64 --out=bin --overwrite --icon=./app.ico",
+    "build": "webpack",
+    "hotloader": "webpack-dev-server --open",
+    "watch": "webpack --watch"
+  },
+  "author": "alex",
+  "license": "ISC",
+  "devDependencies": {
+    "babel-core": "^6.26.0",
+    "babel-loader": "^7.1.2",
+    "electron": "1.8.2",
+    "electron-packager": "^11.0.1",
+    "electron-prebuilt": "^1.4.13",
+    "webpack": "^3.11.0"
+  },
+  "dependencies": {
+    "babel-preset-env": "^1.6.1",
+    "express": "^4.15.2",
+    "socket.io": "^2.0.4"
+  }
+}

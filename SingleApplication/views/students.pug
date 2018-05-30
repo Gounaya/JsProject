@@ -1,0 +1,11 @@
+extends layout
+
+
+block content
+  h1= title
+  table.students
+    each student, index in students
+      tr.student(title=student._id)
+        td.name= student.name
+        td.firstname= student.firstname
+        td.group= student.group

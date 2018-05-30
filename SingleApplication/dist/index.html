@@ -1,0 +1,43 @@
+<!doctype html>
+<html>
+  <head>
+    <title>Single Application</title>
+    <script src="/scripts/bundle.js"></script>
+
+  </head>
+  <body>
+    <h1 style="font-size:100px;text-align:center;">Single Application</h1>
+
+    <h3>Students List</h3>
+    <div style="background-color:lightgrey;position:absolute;left:33%;text-align:center;width:33%; border:solid thin black;" id="StudentsList">
+    </div>
+
+    <h3>Add Student</h3>
+    <form id="addStudent" action="/insert" method="post">
+      <input id = "nameAdd" placeholder="Name" type="text" name="nameAdd" value="">
+      <input id = "firstnameAdd" placeholder="Firstname" type="text" name="firstnameAdd" value="">
+      <input id = "groupAdd" placeholder="Group" type="text" name="groupAdd" value="">
+      <br /><button style="margin: 1% 0% 0% 40%;" type="submit">INSERT</button>
+    </form>
+
+
+
+    <h3>Update Data</h3>
+    <form id="updateData" action="index.html" method="post">
+      <input placeholder="ID" type="number" name="id" value="">
+      <input placeholder="Name" type="text" name="nameAdd" value="">
+      <input placeholder="Firstname" type="text" name="firstnameAdd" value="">
+      <input placeholder="Group" type="text" name="groupAdd" value="">
+      <br /><button style="margin: 1% 0% 0% 40%;" type="submit" >UPDATE</button>
+    </form>
+
+    <h3>Delete Student</h3>
+    <form id="deleteStudent" action="index.html" method="post">
+      <input placeholder="Name" type="text" name="nameAdd" value="">
+      <input placeholder="Firstname" type="text" name="firstnameAdd" value="">
+      <input placeholder="Group" type="text" name="groupAdd" value="">
+      <br /><button style="margin: 1% 0% 0% 40%;" type="submit" >DELETE</button>
+    </form>
+
+  </body>
+</html>
